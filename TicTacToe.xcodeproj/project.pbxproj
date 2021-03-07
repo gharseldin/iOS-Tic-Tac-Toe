@@ -14,6 +14,7 @@
 		349B355B25F44A6C00C9A177 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349B355A25F44A6C00C9A177 /* Preview Assets.xcassets */; };
 		349B355E25F44A6C00C9A177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349B355C25F44A6C00C9A177 /* LaunchScreen.storyboard */; };
 		349B356925F44A6C00C9A177 /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349B356825F44A6C00C9A177 /* TicTacToeTests.swift */; };
+		349B357725F4637B00C9A177 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349B357625F4637B00C9A177 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		349B356425F44A6C00C9A177 /* TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		349B356825F44A6C00C9A177 /* TicTacToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeTests.swift; sourceTree = "<group>"; };
 		349B356A25F44A6C00C9A177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		349B357625F4637B00C9A177 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +81,9 @@
 		349B355025F44A6900C9A177 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
-				349B355125F44A6900C9A177 /* AppDelegate.swift */,
-				349B355325F44A6900C9A177 /* SceneDelegate.swift */,
-				349B355525F44A6900C9A177 /* ContentView.swift */,
-				349B355725F44A6C00C9A177 /* Assets.xcassets */,
-				349B355C25F44A6C00C9A177 /* LaunchScreen.storyboard */,
-				349B355F25F44A6C00C9A177 /* Info.plist */,
+				349B357525F462DF00C9A177 /* App */,
+				349B357425F462D600C9A177 /* Models */,
+				349B357325F462CC00C9A177 /* Views */,
 				349B355925F44A6C00C9A177 /* Preview Content */,
 			);
 			path = TicTacToe;
@@ -105,6 +104,34 @@
 				349B356A25F44A6C00C9A177 /* Info.plist */,
 			);
 			path = TicTacToeTests;
+			sourceTree = "<group>";
+		};
+		349B357325F462CC00C9A177 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				349B355525F44A6900C9A177 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		349B357425F462D600C9A177 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				349B357625F4637B00C9A177 /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		349B357525F462DF00C9A177 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				349B355125F44A6900C9A177 /* AppDelegate.swift */,
+				349B355325F44A6900C9A177 /* SceneDelegate.swift */,
+				349B355725F44A6C00C9A177 /* Assets.xcassets */,
+				349B355C25F44A6C00C9A177 /* LaunchScreen.storyboard */,
+				349B355F25F44A6C00C9A177 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +238,7 @@
 				349B355225F44A6900C9A177 /* AppDelegate.swift in Sources */,
 				349B355425F44A6900C9A177 /* SceneDelegate.swift in Sources */,
 				349B355625F44A6900C9A177 /* ContentView.swift in Sources */,
+				349B357725F4637B00C9A177 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +394,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TicTacToe/Preview Content\"";
 				DEVELOPMENT_TEAM = 2AYJUCL5U2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = TicTacToe/Info.plist;
+				INFOPLIST_FILE = TicTacToe/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,7 +414,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TicTacToe/Preview Content\"";
 				DEVELOPMENT_TEAM = 2AYJUCL5U2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = TicTacToe/Info.plist;
+				INFOPLIST_FILE = TicTacToe/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
