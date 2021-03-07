@@ -9,13 +9,65 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
-    }
+  var body: some View {
+    VStack{
+      HStack(spacing: 0){
+        Text("X")
+          .font(.largeTitle)
+          .fontWeight(.heavy)
+          .frame(maxWidth: .infinity, maxHeight: .infinity)
+          .border(Color.black, width: 5)
+        Text("O")
+          .font(.largeTitle)
+          .fontWeight(.heavy)
+          .frame(maxWidth: .infinity, maxHeight: .infinity)
+          .border(Color.black, width: 5)
+        Text("X")
+          .font(.largeTitle)
+          .fontWeight(.heavy)
+          .frame(maxWidth: .infinity, maxHeight: .infinity)
+          .border(Color.black, width: 5)
+      }
+      HStack(spacing: 0){
+        Text("O")
+          .font(.largeTitle)
+          .fontWeight(.heavy)
+          .frame(maxWidth: .infinity, maxHeight: .infinity)
+          .border(Color.black, width: 5)
+        Text("X")
+          .font(.largeTitle)
+          .fontWeight(.heavy)
+          .frame(maxWidth: .infinity, maxHeight: .infinity)
+          .border(Color.black, width: 5)
+        Text("O")
+          .font(.largeTitle)
+          .fontWeight(.heavy)
+          .frame(maxWidth: .infinity, maxHeight: .infinity)
+          .border(Color.black, width: 5)
+      }
+      HStack(spacing: 0){
+        Text("X")
+          .font(.largeTitle)
+          .fontWeight(.heavy)
+          .frame(maxWidth: .infinity, maxHeight: .infinity)
+          .border(Color.black, width: 5)
+        Text("O")
+          .font(.largeTitle)
+          .fontWeight(.heavy)
+          .frame(maxWidth: .infinity, maxHeight: .infinity)
+          .border(Color.black, width: 5)
+        Text("O")
+          .font(.largeTitle)
+          .fontWeight(.heavy)
+          .frame(maxWidth: .infinity, maxHeight: .infinity)
+          .border(Color.black, width: 5)
+      }
+    }.padding(30)
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }
